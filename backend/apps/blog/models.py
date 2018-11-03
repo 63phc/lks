@@ -65,3 +65,24 @@ class Article(SeoMixin, models.Model):
         verbose_name_plural = _('Posts')
         ordering = ('-created_at',)
 
+class ImagesHeader(models.Model):
+
+    ENABLED = (
+        (0, ('Inactive')),
+        (1, ('Active'))
+    )
+
+    active = models.BooleanField(('Active'), default=True)
+    image = models.ImageField(upload_to='lks/strorage/media',
+                              blank=True)
+    image_alt = models.CharField(blank=True, max_length=255)
+    ordering = models.IntegerField()
+    link
+
+    def __str__(self):
+        return self.url
+
+    class Meta:
+        verbose_name = _('Post')
+        verbose_name_plural = _('Posts')
+        ordering = ('-created_at',)
