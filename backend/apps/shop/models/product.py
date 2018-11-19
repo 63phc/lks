@@ -32,3 +32,6 @@ class Product(SeoMixin, ImagesMixin):
         if not self.id:
             self.slug = slugify(self.title)
         super(Product, self).save(*args, **kwargs)
+
+    def add_to_cart_url(self):
+        return reverse('shop:add_to_cart', kwargs={'product_pk': self.pk})
