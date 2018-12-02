@@ -228,7 +228,7 @@ class Address(models.Model):
     postcode = models.CharField(
         _("Post/Zip-code"), max_length=64, blank=True)
     country = models.ForeignKey(
-        'address.Country',
+        'Country',
         on_delete=models.CASCADE,
         verbose_name=_("Country"))
 
