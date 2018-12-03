@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'apps.basket',
     'apps.order',
     'apps.address',
+    'rest_framework_swagger',
 ]
 
 # AUTH_USER_MODEL = 'apps.users'
