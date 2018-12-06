@@ -24,7 +24,7 @@ msgstr ""
 #: apps/shop/models/product.py:10 apps/slider/models.py:9
 #: apps/tags/models.py:10
 msgid "Title"
-msgstr ""
+msgstr "Название"
 
 #: apps/blog/models.py:13 apps/menu/models.py:10 apps/shop/models/category.py:9
 #: apps/shop/models/product.py:11 apps/tags/models.py:11
@@ -33,157 +33,157 @@ msgstr ""
 
 #: apps/blog/models.py:14
 msgid "Content"
-msgstr ""
+msgstr "Содержимое"
 
 #: apps/blog/models.py:15 apps/menu/models.py:12 apps/menu/models.py:37
 #: apps/shop/models/product.py:13 apps/slider/models.py:11
 msgid "Active"
-msgstr ""
+msgstr "Актуальный"
 
 #: apps/blog/models.py:31
 msgid "Post"
-msgstr ""
+msgstr "Статья"
 
 #: apps/blog/models.py:32
 msgid "Posts"
-msgstr ""
+msgstr "Статьи"
 
 #: apps/feedback/models.py:7 apps/menu/models.py:31
 msgid "Name"
-msgstr ""
+msgstr "Имя"
 
 #: apps/feedback/models.py:8 apps/subscribe/models.py:6
 msgid "Email"
-msgstr ""
+msgstr "Почтовый адрес"
 
 #: apps/feedback/models.py:9 apps/feedback/models.py:12
 msgid "Feedback"
-msgstr ""
+msgstr "Отзыв"
 
 #: apps/feedback/models.py:13
 msgid "Feedbacks"
-msgstr ""
+msgstr "Отзывы"
 
 #: apps/menu/models.py:11
 msgid "Hint"
-msgstr ""
+msgstr "Подсказка"
 
 #: apps/menu/models.py:18
 msgid "Type"
-msgstr ""
+msgstr "Тип"
 
 #: apps/menu/models.py:19
 msgid "Types"
-msgstr ""
+msgstr "Типы"
 
 #: apps/menu/models.py:32 apps/slider/models.py:13
 msgid "Link"
-msgstr ""
+msgstr "Ссылка"
 
 #: apps/menu/models.py:33
 msgid "Menu type"
-msgstr ""
+msgstr "Тип меню"
 
 #: apps/menu/models.py:36
 msgid "Sort"
-msgstr ""
+msgstr "Сортировка"
 
 #: apps/menu/models.py:46
 msgid "Menu item"
-msgstr ""
+msgstr "Элемент меню"
 
 #: apps/menu/models.py:47
 msgid "Menu items"
-msgstr ""
+msgstr "Элементы меню"
 
 #: apps/shop/models/category.py:12 apps/shop/models/product.py:15
 msgid "Category"
-msgstr ""
+msgstr "Категория"
 
 #: apps/shop/models/category.py:13
 msgid "Categories"
-msgstr ""
+msgstr "Категории"
 
 #: apps/shop/models/product.py:12
 msgid "Price"
-msgstr ""
+msgstr "Цена"
 
 #: apps/shop/models/product.py:18 apps/tags/models.py:15
 msgid "Tags"
-msgstr ""
+msgstr "Тэги"
 
 #: apps/shop/models/product.py:21
 msgid "Product"
-msgstr ""
+msgstr "Товар"
 
 #: apps/shop/models/product.py:22
 msgid "Products"
-msgstr ""
+msgstr "Товары"
 
 #: apps/slider/models.py:10
 msgid "Span"
-msgstr ""
+msgstr "Промежуток"
 
 #: apps/slider/models.py:12
 msgid "Ordering"
-msgstr ""
+msgstr "Порядковый номер"
 
 #: apps/slider/models.py:16
 msgid "Slider"
-msgstr ""
+msgstr "Слайдер"
 
 #: apps/slider/models.py:17
 msgid "Sliders"
-msgstr ""
+msgstr "Слайдеры"
 
 #: apps/subscribe/models.py:7 core/mixin.py:20
 msgid "Created at"
-msgstr ""
+msgstr "Создана в"
 
 #: apps/subscribe/models.py:8
 msgid "Hidden"
-msgstr ""
+msgstr "Скрыто"
 
 #: apps/subscribe/models.py:11
 msgid "Subscribe"
-msgstr ""
+msgstr "Подписка"
 
 #: apps/subscribe/models.py:12
 msgid "Subscribers"
-msgstr ""
+msgstr "Подписки"
 
 #: apps/tags/models.py:14
 msgid "Tag"
-msgstr ""
+msgstr "Тэг"
 
 #: core/mixin.py:16
 msgid "Title Seo"
-msgstr ""
+msgstr "Заголовок Seo"
 
 #: core/mixin.py:17
 msgid "Keywords"
-msgstr ""
+msgstr "Ключевые слова"
 
 #: core/mixin.py:18
 msgid "Description"
-msgstr ""
+msgstr "Описание"
 
 #: core/mixin.py:21
 msgid "Updated at"
-msgstr ""
+msgstr "Обновлена в"
 
 #: core/mixin.py:34
 msgid "Images"
-msgstr ""
+msgstr "Изображения"
 
 #: core/mixin.py:35
 msgid "Images Alt"
-msgstr ""
+msgstr "Изображения дополнительные"
 
 #: core/settings/components/common.py:122
 msgid "Russian"
-msgstr ""
+msgstr "Русский"
 
 #: core/settings/components/common.py:123
 msgid "English"
-msgstr ""
+msgstr "Английский"
