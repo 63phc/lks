@@ -126,7 +126,7 @@ msgstr "Промежуток"
 
 #: apps/slider/models.py:12
 msgid "Ordering"
-msgstr "Порядковый номер"
+msgstr "Сортировка"
 
 #: apps/slider/models.py:16
 msgid "Slider"
