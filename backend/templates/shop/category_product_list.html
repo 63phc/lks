@@ -5,8 +5,8 @@
         <div class="b-blog">
             <div class="row">
                 <div class="shop">
-                    <h2>МАГАЗИН УНИКАЛЬНЫХ РУЧНЫХ ИЗДЕЛИЙ</h2>
-                    <h4>Категория "{{ category }}":</h4>
+                    <h2>{% trans "Shop of unique handmade things" %}</h2>
+                    <h4>{% trans "Category" %} "{{ category }}":</h4>
                     <div class="row">
 
                         {% for object in object_list %}
@@ -26,12 +26,12 @@
                                 </div>
                             </div>
                             <div hidden>
-                                Описание: {{ object.description }} <br>
-                                Ключевые слова: {{ object.keywords }} <br>
-                                Image alt: {{ object.image_alt }} <br>
-                                Теги: {% for item_tag in object.tags.all %} {{ item_tag.title }} {% endfor %} <br>
-                                Запись создана: {{ object.created_at }} <br>
-                                Запись обновлена: {% if object.updated_at %}{{ object.updated_at }}{% else %}&mdash;{% endif %} <br>
+                                {% trans 'Description' %}: {{ object.description }} <br>
+                                {% trans 'Key words' %}: {{ object.keywords }} <br>
+                                {% trans 'Image alt' %}: {{ object.image_alt }} <br>
+                                {% trans 'Tags' %}: {% for item_tag in object.tags.all %} {{ item_tag.title }} {% endfor %} <br>
+                                {% trans 'Record created' %}: {{ object.created_at }} <br>
+                                {% trans 'Record updated' %}: {% if object.updated_at %}{{ object.updated_at }}{% else %}&mdash;{% endif %} <br>
                                 <br>
                             </div>
                         {% endfor %}

@@ -4,8 +4,8 @@
     <section>
         <div class="row">
             <div class="shop">
-                <h2>МАГАЗИН УНИКАЛЬНЫХ РУЧНЫХ ИЗДЕЛИЙ</h2>
-                <h4>Характеристики товара:</h4>
+                <h2>{% trans 'Shop of unique handmade things' %}</h2>
+                <h4>{% trans 'Product characteristics' %}:</h4>
 
                 {% if object %}
                     <div class="b-shop--item">
@@ -24,16 +24,16 @@
                         </div>
                     </div>
                     <div hidden>
-                        Описание: {{ object.description }} <br>
-                        Ключевые слова: {{ object.keywords }}
-                        Image alt: {{ product.image_alt }} <br>
-                        Категории: {% for item_category in object.category.all %} {{ item_category.title }} {% endfor %} <br>
-                        Теги: {% for item_tag in object.tags.all %} {{ item_tag.title }} {% endfor %} <br>
-                        Запись создана: {{ object.created_at }} <br>
-                        Запись обновлена: {% if object.updated_at %}{{ product.updated_at }}{% else %}&mdash;{% endif %} <br>
+                        {% trans 'Description' %}: {{ object.description }} <br>
+                        {% trans 'Key words' %}: {{ object.keywords }}
+                        {% trans 'Image alt' %}: {{ product.image_alt }} <br>
+                        {% trans 'Categories' %}: {% for item_category in object.category.all %} {{ item_category.title }} {% endfor %} <br>
+                        {% trans 'Tags' %}: {% for item_tag in object.tags.all %} {{ item_tag.title }} {% endfor %} <br>
+                        {% trans 'Record created' %}: {{ object.created_at }} <br>
+                        {% trans 'Record updated' %}: {% if object.updated_at %}{{ product.updated_at }}{% else %}&mdash;{% endif %} <br>
                     </div>
                 {% else %}
-                    <p>No product is available.</p>
+                    <p>{% trans 'No product is available.' %}</p>
                 {% endif %}
             </div>
 

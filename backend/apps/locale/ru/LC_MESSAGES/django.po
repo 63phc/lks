@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-13 11:02+0000\n"
+"POT-Creation-Date: 2018-12-10 08:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,170 +20,222 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: apps/blog/models.py:12 apps/shop/models/category.py:8
-#: apps/shop/models/product.py:10 apps/slider/models.py:9
-#: apps/tags/models.py:10
+#: backend/apps/blog/models.py:12 backend/apps/shop/models/category.py:8
+#: backend/apps/shop/models/product.py:12 backend/apps/slider/models.py:10
+#: backend/apps/tags/models.py:10
 msgid "Title"
 msgstr "Название"
 
-#: apps/blog/models.py:13 apps/menu/models.py:10 apps/shop/models/category.py:9
-#: apps/shop/models/product.py:11 apps/tags/models.py:11
+#: backend/apps/blog/models.py:13 backend/apps/menu/models.py:10
+#: backend/apps/shop/models/category.py:9
+#: backend/apps/shop/models/product.py:13 backend/apps/slider/models.py:11
+#: backend/apps/tags/models.py:11
 msgid "Slug"
 msgstr ""
 
-#: apps/blog/models.py:14
+#: backend/apps/blog/models.py:14
 msgid "Content"
 msgstr "Содержимое"
 
-#: apps/blog/models.py:15 apps/menu/models.py:12 apps/menu/models.py:37
-#: apps/shop/models/product.py:13 apps/slider/models.py:11
+#: backend/apps/blog/models.py:15 backend/apps/menu/models.py:12
+#: backend/apps/menu/models.py:37 backend/apps/shop/models/product.py:15
+#: backend/apps/slider/models.py:13
 msgid "Active"
 msgstr "Актуальный"
 
-#: apps/blog/models.py:31
-msgid "Post"
-msgstr "Статья"
+#: backend/apps/blog/models.py:32
+msgid "Article"
+msgstr ""
 
-#: apps/blog/models.py:32
-msgid "Posts"
-msgstr "Статьи"
+#: backend/apps/blog/models.py:33
+msgid "Articles"
+msgstr ""
 
-#: apps/feedback/models.py:7 apps/menu/models.py:31
+#: backend/apps/contacts/models/contacts.py:11
+#, fuzzy
+#| msgid "Content"
+msgid "Contact"
+msgstr "Содержимое"
+
+#: backend/apps/contacts/models/contacts.py:12
+#, fuzzy
+#| msgid "Content"
+msgid "Contacts"
+msgstr "Содержимое"
+
+#: backend/apps/contacts/models/feedback.py:10 backend/apps/menu/models.py:31
 msgid "Name"
 msgstr "Имя"
 
-#: apps/feedback/models.py:8 apps/subscribe/models.py:6
-msgid "Email"
-msgstr "Почтовый адрес"
-
-#: apps/feedback/models.py:9 apps/feedback/models.py:12
+#: backend/apps/contacts/models/feedback.py:11
+#: backend/apps/contacts/models/feedback.py:24
 msgid "Feedback"
 msgstr "Отзыв"
 
-#: apps/feedback/models.py:13
+#: backend/apps/contacts/models/feedback.py:25
 msgid "Feedbacks"
 msgstr "Отзывы"
 
-#: apps/menu/models.py:11
-msgid "Hint"
-msgstr "Подсказка"
+#: backend/apps/contacts/models/mixin.py:7
+msgid "Email"
+msgstr "Почтовый адрес"
 
-#: apps/menu/models.py:18
-msgid "Type"
-msgstr "Тип"
-
-#: apps/menu/models.py:19
-msgid "Types"
-msgstr "Типы"
-
-#: apps/menu/models.py:32 apps/slider/models.py:13
-msgid "Link"
-msgstr "Ссылка"
-
-#: apps/menu/models.py:33
-msgid "Menu type"
-msgstr "Тип меню"
-
-#: apps/menu/models.py:36
-msgid "Sort"
-msgstr "Сортировка"
-
-#: apps/menu/models.py:46
-msgid "Menu item"
-msgstr "Элемент меню"
-
-#: apps/menu/models.py:47
-msgid "Menu items"
-msgstr "Элементы меню"
-
-#: apps/shop/models/category.py:12 apps/shop/models/product.py:15
-msgid "Category"
-msgstr "Категория"
-
-#: apps/shop/models/category.py:13
-msgid "Categories"
-msgstr "Категории"
-
-#: apps/shop/models/product.py:12
-msgid "Price"
-msgstr "Цена"
-
-#: apps/shop/models/product.py:18 apps/tags/models.py:15
-msgid "Tags"
-msgstr "Тэги"
-
-#: apps/shop/models/product.py:21
-msgid "Product"
-msgstr "Товар"
-
-#: apps/shop/models/product.py:22
-msgid "Products"
-msgstr "Товары"
-
-#: apps/slider/models.py:10
-msgid "Span"
-msgstr "Промежуток"
-
-#: apps/slider/models.py:12
-msgid "Ordering"
-msgstr "Сортировка"
-
-#: apps/slider/models.py:16
-msgid "Slider"
-msgstr "Слайдер"
-
-#: apps/slider/models.py:17
-msgid "Sliders"
-msgstr "Слайдеры"
-
-#: apps/subscribe/models.py:7 core/mixin.py:20
+#: backend/apps/contacts/models/mixin.py:8 backend/core/mixin.py:20
 msgid "Created at"
 msgstr "Создана в"
 
-#: apps/subscribe/models.py:8
+#: backend/apps/contacts/models/reviews.py:12
+msgid "Review"
+msgstr ""
+
+#: backend/apps/contacts/models/reviews.py:13
+msgid "Reviews"
+msgstr ""
+
+#: backend/apps/contacts/models/subscribe.py:8
 msgid "Hidden"
 msgstr "Скрыто"
 
-#: apps/subscribe/models.py:11
+#: backend/apps/contacts/models/subscribe.py:11
 msgid "Subscribe"
 msgstr "Подписка"
 
-#: apps/subscribe/models.py:12
+#: backend/apps/contacts/models/subscribe.py:12
 msgid "Subscribers"
 msgstr "Подписки"
 
-#: apps/tags/models.py:14
+#: backend/apps/menu/models.py:11
+msgid "Hint"
+msgstr "Подсказка"
+
+#: backend/apps/menu/models.py:18
+msgid "Type"
+msgstr "Тип"
+
+#: backend/apps/menu/models.py:19
+msgid "Types"
+msgstr "Типы"
+
+#: backend/apps/menu/models.py:32 backend/apps/slider/models.py:15
+msgid "Link"
+msgstr "Ссылка"
+
+#: backend/apps/menu/models.py:33
+msgid "Menu type"
+msgstr "Тип меню"
+
+#: backend/apps/menu/models.py:36
+msgid "Sort"
+msgstr "Сортировка"
+
+#: backend/apps/menu/models.py:46
+msgid "Menu item"
+msgstr "Элемент меню"
+
+#: backend/apps/menu/models.py:47
+msgid "Menu items"
+msgstr "Элементы меню"
+
+#: backend/apps/shop/models/category.py:12
+#: backend/apps/shop/models/product.py:17
+msgid "Category"
+msgstr "Категория"
+
+#: backend/apps/shop/models/category.py:13
+msgid "Categories"
+msgstr "Категории"
+
+#: backend/apps/shop/models/product.py:14
+msgid "Price"
+msgstr "Цена"
+
+#: backend/apps/shop/models/product.py:20 backend/apps/tags/models.py:15
+msgid "Tags"
+msgstr "Тэги"
+
+#: backend/apps/shop/models/product.py:28
+msgid "Product"
+msgstr "Товар"
+
+#: backend/apps/shop/models/product.py:29
+msgid "Products"
+msgstr "Товары"
+
+#: backend/apps/slider/models.py:12
+#, fuzzy
+#| msgid "Title"
+msgid "Sub Title"
+msgstr "Название"
+
+#: backend/apps/slider/models.py:14
+msgid "Ordering"
+msgstr "Сортировка"
+
+#: backend/apps/slider/models.py:18
+msgid "Slider"
+msgstr "Слайдер"
+
+#: backend/apps/slider/models.py:19
+msgid "Sliders"
+msgstr "Слайдеры"
+
+#: backend/apps/tags/models.py:14
 msgid "Tag"
 msgstr "Тэг"
 
-#: core/mixin.py:16
+#: backend/core/mixin.py:16
 msgid "Title Seo"
 msgstr "Заголовок Seo"
 
-#: core/mixin.py:17
+#: backend/core/mixin.py:17
 msgid "Keywords"
 msgstr "Ключевые слова"
 
-#: core/mixin.py:18
+#: backend/core/mixin.py:18
 msgid "Description"
 msgstr "Описание"
 
-#: core/mixin.py:21
+#: backend/core/mixin.py:21
 msgid "Updated at"
 msgstr "Обновлена в"
 
-#: core/mixin.py:34
+#: backend/core/mixin.py:34
 msgid "Images"
 msgstr "Изображения"
 
-#: core/mixin.py:35
+#: backend/core/mixin.py:35
 msgid "Images Alt"
 msgstr "Изображения дополнительные"
 
-#: core/settings/components/common.py:122
+#: backend/core/settings/components/common.py:125
 msgid "Russian"
 msgstr "Русский"
 
-#: core/settings/components/common.py:123
+#: backend/core/settings/components/common.py:126
 msgid "English"
 msgstr "Английский"
+
+#: backend/templates/blog/detail.html:26
+msgid "next previews"
+msgstr ""
+
+#: backend/templates/blog/detail.html:27
+msgid "about autor"
+msgstr ""
+
+#: backend/templates/blog/detail.html:28
+msgid "more post"
+msgstr ""
+
+#: backend/templates/blog/detail.html:29
+msgid "comments"
+msgstr ""
+
+#~ msgid "Post"
+#~ msgstr "Статья"
+
+#~ msgid "Posts"
+#~ msgstr "Статьи"
+
+#~ msgid "Span"
+#~ msgstr "Промежуток"

@@ -4,14 +4,14 @@
     <section>
         <div class="row">
             <div class="shop">
-                <h2>МАГАЗИН УНИКАЛЬНЫХ РУЧНЫХ ИЗДЕЛИЙ</h2>
-                <h4>{% if object %}Редактирование параметров товара{% else %}Добавление нового товара{% endif %}:</h4>
+                <h2>{% trans 'Shop of unique handmade things' %}</h2>
+                <h4>{% if object %}{% trans 'Editing of product characteristics' %}{% else %}Adding of product{% endif %}:</h4>
                 <form method="post" enctype="multipart/form-data">{% csrf_token %}
                     {{ form.as_p }}
-                    <input type="submit" value="{% if object %}Обновить{% else %}Создать{% endif %}">
+                    <input type="submit" value="{% if object %}{% trans 'Update' %}{% else %}{% trans 'Save' %}{% endif %}">
                 </form>
                 {% if object %}
-                    <button onclick="location.href='{% url 'shop:product_delete' object.slug %}'" type="button">Удалить товар</button>
+                    <button onclick="location.href='{% url 'shop:product_delete' object.slug %}'" type="button">{% trans 'Delete the product' %}</button>
                 {% endif %}
             </div>
         </div>

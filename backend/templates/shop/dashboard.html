@@ -4,9 +4,9 @@
     <section>
         <div class="row">
             <div class="shop">
-                <h2>МАГАЗИН УНИКАЛЬНЫХ РУЧНЫХ ИЗДЕЛИЙ</h2>
-                <h4>Панель управления товарами</h4>
-                    <button onclick="location.href='{% url 'shop:product_create' %}'" type="button">&oplus; Добавить товар</button>
+                <h2>{% trans 'Shop of unique handmade things' %}</h2>
+                <h4>{% trans 'Product management panel' %}</h4>
+                    <button onclick="location.href='{% url 'shop:product_create' %}'" type="button">&oplus; {% trans 'Add a product' %}</button>
                     {% if object_list %}
                         {% for object in object_list %}
                             <div class="b-shop--item">
@@ -18,11 +18,11 @@
                                     <div class="b-bestseller--item_price">$ {{ object.price }}.00</div>
                                 </div>
                             </div>
-                            <button title="Удалить товар" onclick="location.href='{% url 'shop:product_delete' object.slug %}'" type="button">&#215;</button>
-                            <button title="Редактировать товар" onclick="location.href='{% url 'shop:product_edit' object.slug %}'" type="button">&#9998;</button>
+                            <button title="{% trans 'Remove the product' %}" onclick="location.href='{% url 'shop:product_delete' object.slug %}'" type="button">&#215;</button>
+                            <button title="{% trans 'Edit the product' %}" onclick="location.href='{% url 'shop:product_edit' object.slug %}'" type="button">&#9998;</button>
                         {% endfor %}
                         <br><br>
-                        <button onclick="location.href='{% url 'shop:product_create' %}'" type="button">&oplus; Добавить товар</button>
+                        <button onclick="location.href='{% url 'shop:product_create' %}'" type="button">&oplus; {% trans 'Add a product' %}</button>
                         <div class="pagination">
                             <span class="step-links">
                                 {% if page_obj.has_previous %}

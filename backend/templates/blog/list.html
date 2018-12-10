@@ -4,8 +4,8 @@
     <section>
         <div class="b-blog">
             <div class="b-blog--header">
-            <h2>АВТОРСКИЙ</h2>
-            <h1>Блог по вязанию</h1>
+            <h2>{% trans 'AUTOR' %}</h2>
+            <h1>{% trans 'Blog about knitting' %}</h1>
         </div>
             <div class="row">
                 <div class="blog-main">
@@ -29,14 +29,14 @@
                                 {{ item.content| truncatewords:15 }}
                             </div>
                             <div class="b-blog--item_button">
-                                <button onclick="location.href='{% url 'blog:blog-detail' slug=item.slug %}';" type="button">Подробней</button>
+                                <button onclick="location.href='{% url 'blog:blog-detail' slug=item.slug %}';" type="button">{% trans 'Detaits' %}</button>
                             </div>
 
                         </div>
                     </div>
                     {% endfor %}
                     <div class="b-blog--item__more">
-                        <button type="button" class="" id="">Больше постов</button>
+                        <button type="button" class="" id="">{% trans 'More posts' %}</button>
                     </div>
                   </div>
                 {% include 'components/_sidebar.html' %}

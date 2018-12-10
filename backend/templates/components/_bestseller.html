@@ -4,8 +4,8 @@
 {% if products %}
 <section>
     <div class="b-bestseller">
-        <h2>МАГАЗИН УНИКАЛЬНЫХ РУЧНЫХ ИЗДЕЛИЙ</h2>
-        <h3>ПОПУЛЯРНОЕ</h3>
+        <h2>{% trans 'Shop of unique handmade things' %}</h2>
+        <h3>{% trans 'Popular' %}</h3>
 
     <div class="row">
         {% for object in products %}
@@ -34,7 +34,7 @@
     </div>
     <div class="row">
         <div class="b-bestseller--more">
-            <button type="button" class="" id="">Больше товаров</button>
+            <button type="button" class="" id="">{% trans 'More products' %}</button>
         </div>
     </div>
         </div>

@@ -4,11 +4,11 @@
     <section>
         <div class="row">
             <div class="shop">
-                <h2>МАГАЗИН УНИКАЛЬНЫХ РУЧНЫХ ИЗДЕЛИЙ</h2>
-                <h4>Подтвердите удаление товара:</h4>
+                <h2>{% trans 'Shop of unique handmade things' %}</h2>
+                <h4>{% trans 'Confirm removing the product:' %}</h4>
                     <form method="post">{% csrf_token %}
-                        <p>Вы дейстительно желаете удалить "{{ object }}"?</p>
-                        <input type="submit" value="Да, подтверждаю">
+                        <p>{% trans 'Are you really want to delete the product' %} "{{ object }}"?</p>
+                        <input type="submit" value="{% trans "Yes, I'm sure" %}">
                     </form>
             </div>
         </div>
