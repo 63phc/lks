@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-10 08:32+0000\n"
+"POT-Creation-Date: 2018-12-10 10:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,11 +45,11 @@ msgstr "Актуальный"
 
 #: backend/apps/blog/models.py:32
 msgid "Article"
-msgstr ""
+msgstr "Статья"
 
 #: backend/apps/blog/models.py:33
 msgid "Articles"
-msgstr ""
+msgstr "Статьи"
 
 #: backend/apps/contacts/models/contacts.py:11
 #, fuzzy
@@ -58,6 +58,7 @@ msgid "Contact"
 msgstr "Содержимое"
 
 #: backend/apps/contacts/models/contacts.py:12
+#: backend/templates/components/_footer.html:15
 #, fuzzy
 #| msgid "Content"
 msgid "Contacts"
@@ -86,17 +87,18 @@ msgstr "Создана в"
 
 #: backend/apps/contacts/models/reviews.py:12
 msgid "Review"
-msgstr ""
+msgstr "Отзыв"
 
 #: backend/apps/contacts/models/reviews.py:13
 msgid "Reviews"
-msgstr ""
+msgstr "Отзывы"
 
 #: backend/apps/contacts/models/subscribe.py:8
 msgid "Hidden"
 msgstr "Скрыто"
 
 #: backend/apps/contacts/models/subscribe.py:11
+#: backend/templates/components/_subcribe.html:8
 msgid "Subscribe"
 msgstr "Подписка"
 
@@ -138,10 +140,13 @@ msgstr "Элементы меню"
 
 #: backend/apps/shop/models/category.py:12
 #: backend/apps/shop/models/product.py:17
+#: backend/templates/shop/category_product_list.html:9
 msgid "Category"
 msgstr "Категория"
 
 #: backend/apps/shop/models/category.py:13
+#: backend/templates/components/_categories.html:5
+#: backend/templates/shop/product_detail.html:30
 msgid "Categories"
 msgstr "Категории"
 
@@ -150,6 +155,9 @@ msgid "Price"
 msgstr "Цена"
 
 #: backend/apps/shop/models/product.py:20 backend/apps/tags/models.py:15
+#: backend/templates/shop/category_product_list.html:32
+#: backend/templates/shop/product_detail.html:31
+#: backend/templates/shop/product_list.html:35
 msgid "Tags"
 msgstr "Тэги"
 
@@ -192,6 +200,9 @@ msgid "Keywords"
 msgstr "Ключевые слова"
 
 #: backend/core/mixin.py:18
+#: backend/templates/shop/category_product_list.html:29
+#: backend/templates/shop/product_detail.html:27
+#: backend/templates/shop/product_list.html:32
 msgid "Description"
 msgstr "Описание"
 
@@ -217,19 +228,240 @@ msgstr "Английский"
 
 #: backend/templates/blog/detail.html:26
 msgid "next previews"
-msgstr ""
+msgstr "следующие превью"
 
 #: backend/templates/blog/detail.html:27
 msgid "about autor"
-msgstr ""
+msgstr "Об авторе"
 
 #: backend/templates/blog/detail.html:28
 msgid "more post"
-msgstr ""
+msgstr "больше записей"
 
 #: backend/templates/blog/detail.html:29
 msgid "comments"
-msgstr ""
+msgstr "комментарии"
+
+#: backend/templates/blog/list.html:7
+#: backend/templates/contacts/review-form.html:7
+#: backend/templates/contacts/review-list.html:7
+msgid "AUTOR"
+msgstr "АВТОРСКИЙ"
+
+#: backend/templates/blog/list.html:8
+#: backend/templates/contacts/review-form.html:8
+#: backend/templates/contacts/review-list.html:8
+msgid "Blog about knitting"
+msgstr "Блог о вязании"
+
+#: backend/templates/blog/list.html:32
+msgid "Detaits"
+msgstr "Подбробности"
+
+#: backend/templates/blog/list.html:39
+msgid "More posts"
+msgstr "Больше записей"
+
+#: backend/templates/components/_about.html:2
+msgid "About autor"
+msgstr "Об авторе"
+
+#: backend/templates/components/_about.html:6
+msgid "Kate Anaprienko"
+msgstr "Катя Анаприенко"
+
+#: backend/templates/components/_banner.html:1
+msgid "banner"
+msgstr "баннер"
+
+#: backend/templates/components/_bestseller.html:7
+#: backend/templates/contacts/feedback.html:7
+#: backend/templates/shop/category_product_list.html:8
+#: backend/templates/shop/dashboard.html:7
+#: backend/templates/shop/product_confirm_delete.html:7
+#: backend/templates/shop/product_detail.html:7
+#: backend/templates/shop/product_form.html:7
+#: backend/templates/shop/product_list.html:7
+msgid "Shop of unique handmade things"
+msgstr "Магазин уникальных вязанных вещей"
+
+#: backend/templates/components/_bestseller.html:8
+msgid "Popular"
+msgstr "Популярное"
+
+#: backend/templates/components/_bestseller.html:37
+#, fuzzy
+#| msgid "Products"
+msgid "More products"
+msgstr "Товары"
+
+#: backend/templates/components/_footer.html:4
+#: backend/templates/components/_footer.html:13
+msgid "About us"
+msgstr "О нас"
+
+#: backend/templates/components/_footer.html:9
+msgid "Useful links"
+msgstr "Полезные ссылки"
+
+#: backend/templates/components/_footer.html:11
+msgid "Blog"
+msgstr "Блог"
+
+#: backend/templates/components/_footer.html:12
+msgid "Shop"
+msgstr "Магазин"
+
+#: backend/templates/components/_footer.html:14
+msgid "Portfolio"
+msgstr "Портфолио"
+
+#: backend/templates/components/_footer.html:21
+msgid "Socials"
+msgstr "Социальные сети"
+
+#: backend/templates/components/_footer.html:23
+#, fuzzy
+#| msgid "Content"
+msgid "Vkontakte"
+msgstr "Содержимое"
+
+#: backend/templates/components/_footer.html:24
+msgid "Facebook"
+msgstr "Фейсбук"
+
+#: backend/templates/components/_footer.html:25
+msgid "Pinterest"
+msgstr "Пинтерест"
+
+#: backend/templates/components/_footer.html:26
+msgid "Youtube"
+msgstr "Ютуюб"
+
+#: backend/templates/components/_footer.html:27
+msgid "Telegram"
+msgstr "Телеграм"
+
+#: backend/templates/components/_footer.html:33
+msgid "Little Knits Story 2017"
+msgstr "Маленькие истории о вязании. 2017"
+
+#: backend/templates/components/_footer.html:33
+msgid "All Rights Reserved"
+msgstr "Все права защищены"
+
+#: backend/templates/components/_last-posts.html:6
+msgid "Last posts"
+msgstr "Последние записки"
+
+#: backend/templates/components/_subcribe.html:2
+msgid "Be the first to know new and exclusive updates"
+msgstr "Узнай первым о новых и уникальных обнолениях"
+
+#: backend/templates/contacts/contacts.html:5
+msgid "HELLO"
+msgstr "ПРИВЕТ"
+
+#: backend/templates/contacts/review-form.html:19
+msgid "Send"
+msgstr "Отправить"
+
+#: backend/templates/contacts/success_subscribe.html:8
+msgid "The subscription issued."
+msgstr "Подписка оформлена"
+
+#: backend/templates/registration/login.html:5
+msgid "Your username and password didn't match. Please try again."
+msgstr "Ваше имя и пароль не соответствуют друг другу. Пожалуйста попробуйте ещё раз."
+
+#: backend/templates/registration/login.html:13
+msgid "Please login to see this page."
+msgstr "Пожалуйста, залогинтесь, чтобы перейти на эту страницу."
+
+#: backend/templates/shop/category_product_list.html:30
+#: backend/templates/shop/product_detail.html:28
+#: backend/templates/shop/product_list.html:33
+#, fuzzy
+#| msgid "Keywords"
+msgid "Key words"
+msgstr "Ключевые слова"
+
+#: backend/templates/shop/category_product_list.html:31
+#: backend/templates/shop/product_detail.html:29
+#: backend/templates/shop/product_list.html:34
+#, fuzzy
+#| msgid "Images Alt"
+msgid "Image alt"
+msgstr "Изображения дополнительные"
+
+#: backend/templates/shop/category_product_list.html:33
+#: backend/templates/shop/product_detail.html:32
+#: backend/templates/shop/product_list.html:36
+msgid "Record created"
+msgstr "Запись создана"
+
+#: backend/templates/shop/category_product_list.html:34
+#: backend/templates/shop/product_detail.html:33
+#: backend/templates/shop/product_list.html:37
+msgid "Record updated"
+msgstr "Запись обновлена"
+
+#: backend/templates/shop/dashboard.html:8
+msgid "Product management panel"
+msgstr "Панель управления товаром"
+
+#: backend/templates/shop/dashboard.html:9
+#: backend/templates/shop/dashboard.html:25
+#, fuzzy
+#| msgid "Product"
+msgid "Add a product"
+msgstr "Товар"
+
+#: backend/templates/shop/dashboard.html:21
+msgid "Remove the product"
+msgstr "Удалить товар"
+
+#: backend/templates/shop/dashboard.html:22
+msgid "Edit the product"
+msgstr "Редактировать товар"
+
+#: backend/templates/shop/product_confirm_delete.html:8
+msgid "Confirm removing the product:"
+msgstr "Подтвердите удаление товара"
+
+#: backend/templates/shop/product_confirm_delete.html:10
+msgid "Are you really want to delete the product"
+msgstr "Вы действительно желаете удалить товар"
+
+#: backend/templates/shop/product_confirm_delete.html:11
+msgid "Yes, I'm sure"
+msgstr "Да, я уверен."
+
+#: backend/templates/shop/product_detail.html:8
+msgid "Product characteristics"
+msgstr "Характеристики товара"
+
+#: backend/templates/shop/product_detail.html:36
+msgid "No product is available."
+msgstr "Нет товаров."
+
+#: backend/templates/shop/product_form.html:8
+msgid "Editing of product characteristics"
+msgstr "Редактирование характеристик товара"
+
+#: backend/templates/shop/product_form.html:11
+#, fuzzy
+#| msgid "Updated at"
+msgid "Update"
+msgstr "Обновить"
+
+#: backend/templates/shop/product_form.html:11
+msgid "Save"
+msgstr "Сохранить"
+
+#: backend/templates/shop/product_form.html:14
+msgid "Delete the product"
+msgstr "Удалить товар"
 
 #~ msgid "Post"
 #~ msgstr "Статья"
