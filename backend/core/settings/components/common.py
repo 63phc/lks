@@ -37,6 +37,11 @@ INSTALLED_APPS = [
     'apps.dashboard',
     'apps.slider',
     'captcha',
+    'django.contrib.sites',
+    'django.contrib.flatpages',
+    'ckeditor',
+    'ckeditor_uploader',
+    'rest_framework_swagger',
 ]
 
 # AUTH_USER_MODEL = 'apps.users'
@@ -50,6 +55,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
 ]
 
 REST_FRAMEWORK = {
@@ -136,3 +142,14 @@ STATICFILES_DIRS = (os.path.join(ROOT_DIR, 'static'),)
 
 MEDIA_URL = '/storage/'
 MEDIA_ROOT = os.path.join(ROOT_DIR, '../storage/media')
+
+CKEDITOR_JQUERY_URL = 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'
+
+CKEDITOR_UPLOAD_PATH = 'uploads/'
+CKEDITOR_IMAGE_BACKEND = "pillow"
+
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': None,
+    },
+}
