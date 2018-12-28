@@ -1,13 +1,3 @@
-# INSTALLED_APPS += [
-#     'debug_toolbar',
-# ]
-#
-# MIDDLEWARE += [
-#     'debug_toolbar.middleware.DebugToolbarMiddleware',
-#     'debug_panel.middleware.DebugPanelMiddleware',
-#
-# ]
-
 def toolbar(request):
     return True
 

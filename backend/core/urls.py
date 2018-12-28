@@ -5,6 +5,7 @@ from django.conf.urls.static import static
 from rest_framework_swagger.views import get_swagger_view
 from django.views.generic import TemplateView
 import grappelli
+from django.conf import settings
 
 from apps.blog.views import error_404
 from apps.users.views import RegistrationViews
@@ -49,6 +50,13 @@ urls_api = [
     path('api/', include('apps.users.routes'))
 ]
 
+if settings.DEBUG:
+    import debug_toolbar
+    url_debug = [
+        path('__debug__/', include(debug_toolbar.urls)),
+    ]
+
+urlpatterns += url_debug
 urlpatterns += urls_api
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
