@@ -16,7 +16,7 @@ django-mptt-admin==0.6.0
 django-optimized-image==0.1.0
 django-phonenumber-field==2.1.0
 django-rest-swagger==2.2.0
-django-simple-captcha==0.5.9
+django-simple-captcha==0.5.11
 django-split-settings==0.3.0
 django-webpack-loader==0.6.0
 djangorestframework==3.9.4
