@@ -2,7 +2,7 @@ FROM python:3.7-alpine
 ENV PYTHONUNBUFFERED 1
 ARG DEV=dev
 
-RUN mkdir -p /app/requirements
+RUN mkdir -p /app
 WORKDIR /app
 
 RUN apk update && \
@@ -10,7 +10,7 @@ RUN apk update && \
     apk add postgresql-dev postgresql-client jpeg-dev zlib-dev
 RUN apk add --update bash && rm -rf /var/cache/apk/*
 
-COPY requirements /app/requirements
+COPY requirements /app/
 #--no-cache-dir
 RUN pip install -r requirements/dev.txt
 
