@@ -10,7 +10,7 @@ RUN apk update && \
     apk add postgresql-dev postgresql-client jpeg-dev zlib-dev
 RUN apk add --update bash && rm -rf /var/cache/apk/*
 
-COPY requirements /app/
+COPY requirements /app/requirements
 #--no-cache-dir
 RUN pip install -r requirements/dev.txt
 
