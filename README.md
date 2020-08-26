@@ -1,3 +1,4 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/79d402edf48b4b8886a47f22cc7e9212)](https://app.codacy.com/manual/pavel.burns/lks?utm_source=github.com&utm_medium=referral&utm_content=63phc/lks&utm_campaign=Badge_Grade_Dashboard)
 [![GitHub](https://img.shields.io/badge/docs-docs.lkslink.info-brightgreen.svg)](https://63phc.github.io/lks/)
 [![CodeFactor](https://www.codefactor.io/repository/github/63phc/lks/badge?s=20b5db5dea700723ad3e05f5a2e0e6bb500fda65)](https://www.codefactor.io/repository/github/63phc/lks)
 [![BCH compliance](https://bettercodehub.com/edge/badge/63phc/lks?branch=develop)](https://bettercodehub.com/)
